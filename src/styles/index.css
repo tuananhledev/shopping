@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@layer utilities {
+   .f-center {
+      @apply flex justify-center items-center;
+   }
+   .fx-center {
+      @apply flex justify-center;
+   }
+   .fy-center {
+      @apply flex items-center;
+   }
+   .bg-rounded {
+      @apply rounded-lg bg-[#ffffff];
+   }
+   .bg-rounded-md {
+      @apply rounded bg-[#ffffff];
+   }
+   .text-truncate-2 {
+      display: -webkit-box;
+      max-width: 100%;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+   }
+   .shadow-list {
+      box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+   }
+}
+
+/* SLICK */
+.slick-list .slick-track {
+   margin: 0 -4px !important;
+   display: flex !important;
+}
+.slick-list .slick-track .slick-slide {
+   padding: 0 4px !important;
+   height: inherit !important;
+}
+.slick-list .slick-track .slick-slide > div {
+   height: 100%;
+}
+/* END SLICK */
+
+/* SCROLLBAR */
+/* Chỉnh scrollbar */
+
+html *::-webkit-scrollbar {
+   border-radius: 0;
+   width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+   border-radius: 4px;
+   background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+   border-radius: 0;
+   background-color: rgba(0, 0, 0, 0);
+}
+/*END SCROLLBAR */
